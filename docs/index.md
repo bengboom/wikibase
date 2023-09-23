@@ -1,11 +1,7 @@
 # Obsidian Notes
 
-Publish your public notes with MkDocs
+These are my notes written in Obsidian
 
-## Hello World!
 
-The `index.md` in the `/docs` folder is the homepage you see here.
 
-The folders in `/docs` appear as the main sections on the navigation bar.
-
-The notes appear as pages within these sections. For example, [[Note 1]] in `Topic 1`
+I enjoy building my knowledge tree. However, this published branch will only be updated twice a year since I don't want to immediately upload my current semester's learning notes.
