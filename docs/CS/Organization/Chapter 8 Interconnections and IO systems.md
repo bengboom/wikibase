@@ -168,7 +168,8 @@ DMA开销远小于中断
 	- 影响了CPU工作
 	- 改进 ：外设->缓存->DMA 等会再占总线 **主要使用**
 	- ![[Pasted image 20230604154842.png]]
-- 周期挪用（窃取）法 单字传送 *闪现* 比例不一定是2:1
+- 周期挪用（窃取）Cycle stealing法 单字传送 *闪现* 比例不一定是2:1
+	- Cycle stealing is used to transfer data on the system bus
 	- ![[Pasted image 20230604154855.png]]
 - 交替分时访问
 	- 每个存储周期分成两个时间片，一个给CPU，一个给DMA

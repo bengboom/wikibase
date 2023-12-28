@@ -2,7 +2,7 @@
 hear the recording **Once** -> recreating real life
 stay focus daily -> stop reading **news**, **media**
 question maker just wants to simulate **real life**
-pay attention to **Plural or Singular**   **单复数匹配**很重要
+pay attention to **Plural or Singular**   **单复数匹配**很重要 形式与录音里的形式相同 Wednesdays
 有两个人的对话题，**要把名字和男女性别对应上**，后面可能不会再提到
 ## Parts
 ### Part 1

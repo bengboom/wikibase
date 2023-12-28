@@ -145,7 +145,7 @@ buffer,缓冲器（调延迟 驱动）由工具（EDA）自行加入
 
 多通道：扩展串并联
 Fan in of CMOS：输入门增加后，并联导通电阻会变小，串联增加，产生影响。解决方式：多个小Fan-in但Delay增加
->**Fan-in** is the number of inputs a [logic gate](https://en.wikipedia.org/wiki/Logic_gate "Logic gate") can handle.[[1]](https://en.wikipedia.org/wiki/Fan-in) Physical logic gates with a large fan-in tend to be slower than those with a small fan-in. This is because the complexity of the input circuitry increases the input [capacitance](https://en.wikipedia.org/wiki/Capacitance "Capacitance") of the device. Using logic gates with higher fan-in will help in reducing the depth of a logic circuit; this is because circuit design is realized by the target logic family at a digital level, meaning any large fan-in logic gates are simply the smaller fan-in gates chained together in series at a given depth to widen the c ircuit instead.
+>**Fan-in** is the number of inputs a [logic gate](https://en.wikipedia.org/wiki/Logic_gate "Logic gate") can handle.[[确定性知识推理]](https://en.wikipedia.org/wiki/Fan-in) Physical logic gates with a large fan-in tend to be slower than those with a small fan-in. This is because the complexity of the input circuitry increases the input [capacitance](https://en.wikipedia.org/wiki/Capacitance "Capacitance") of the device. Using logic gates with higher fan-in will help in reducing the depth of a logic circuit; this is because circuit design is realized by the target logic family at a digital level, meaning any large fan-in logic gates are simply the smaller fan-in gates chained together in series at a given depth to widen the c ircuit instead.
 
 #### noise margin specification
 - HIGH-level input voltage, VIH.
@@ -173,6 +173,7 @@ $$P_L=C_LV_{dd}^2 f$$
 
 Dynamic Power
 $$P_D=(C_L+C_T)V_{dd}^2f$$
+
 
 降压减小功耗，propagation delay + , noise margin -
 降频降低功耗，电压同时下降，功耗降低更多。

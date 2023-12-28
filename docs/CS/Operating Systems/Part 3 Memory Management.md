@@ -237,7 +237,7 @@ when a page be brought into memory?
 	- 在进程开始时有较多缺页fault
 - Pre-paging 预调页
 	- bring in more pages than needed, 开始运行时已经装入
-- 要明确获取策略才能讨论缺页次数（程序开始载入时是否算缺页）
+- 要明确获取策略才能讨论缺页次数（程序开始载入时是否算缺页，预调页不算）
 ##### Replacement Policy 置换策略
 在什么范围内判断有无空闲frame?没有空闲移出哪个页面？
 - Variable Allocation, Global Scope

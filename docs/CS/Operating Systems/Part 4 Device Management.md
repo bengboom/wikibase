@@ -102,7 +102,7 @@ Design Issue
 - 允许访问 传递所需要的扇区在disk cache中的位置指针
 
 ### 置换算法
-当系统需要从磁盘上读入一个扇区并在disk cache中为其建立一个副本时，如果disk cache没 有空闲空间，那么系统使用何种策略从disk cache中选择一个被置换扇区？
+当系统需要从磁盘上读入一个扇区并在disk cache中为其建立一个副本时，如果disk cache没有空闲空间，那么系统使用何种策略从disk cache中选择一个被置换扇区？
 置换算法 基于miss rate评价性能
 - LRU *Least Recently Used*
 	- 局部性原理 总体优于LFU
@@ -125,6 +125,7 @@ Design Issue
 早期提出时 内存很贵 所以在外存建立缓存
 而现在的作用可能体现在云计算环境下
 ![[Screenshot 2023-11-09 at 11.02.01.png]]
+作用：可将一台独占物理IO设备虚拟为多台逻辑IO设备，从而允许多个用户共享一台物理IO设备
 
 ## Disk Scheduling
 磁盘调度策略

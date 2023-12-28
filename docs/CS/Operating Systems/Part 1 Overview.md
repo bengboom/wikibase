@@ -47,7 +47,7 @@ Major Requirements:
 > *All thread of a process share this*
 > 轻量化后的优点：创建终止切换线程更快，进程内线程间通信without invoking kernel
 #### Process
-进程是系统分配资源的基本对象
+进程是系统**分配资源**的基本对象
 现代OS中，进程是系统中**拥有资源的最小实体**
 传统OS中，进程也是系统调度最小单位
 **Thread Process**都是动态概念 需要创建删除调度通信等等

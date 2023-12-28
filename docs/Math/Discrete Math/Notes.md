@@ -1,15 +1,4 @@
 # 离散数学
-
-## 课程概要
-
-### 成绩构成
-
-    平时作业、考勤20%
-    
-    开卷半期考试 10%
-    
-    期末考试 70%
-
 ## 第一章 集合论
 
     set, element, subset, proper subset, properly inclusion relation, inclusion relation,

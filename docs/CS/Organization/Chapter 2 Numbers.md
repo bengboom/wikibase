@@ -1,6 +1,6 @@
 ### 移码表示 
 
->**Offset binary**,[[1]](https://en.wikipedia.org/wiki/Offset_binary#cite_note-Patrice_2006-1) also referred to as **excess-K**,[[1]](https://en.wikipedia.org/wiki/Offset_binary#cite_note-Patrice_2006-1) **excess-_N_**, **excess-e**,[[2]](https://en.wikipedia.org/wiki/Offset_binary#cite_note-Dokter_1973-2)[[3]](https://en.wikipedia.org/wiki/Offset_binary#cite_note-Dokter_1975-3) **excess code** or **biased representation**, is a method for [signed number representation](https://en.wikipedia.org/wiki/Signed_number_representation "Signed number representation") where a signed number n is represented by the bit pattern corresponding to the unsigned number n+K, K being the _biasing value_ or _offset_.
+>**Offset binary**,[[确定性知识推理]](https://en.wikipedia.org/wiki/Offset_binary#cite_note-Patrice_2006-1) also referred to as **excess-K**,[[确定性知识推理]](https://en.wikipedia.org/wiki/Offset_binary#cite_note-Patrice_2006-1) **excess-_N_**, **excess-e**,[[2]](https://en.wikipedia.org/wiki/Offset_binary#cite_note-Dokter_1973-2)[[3]](https://en.wikipedia.org/wiki/Offset_binary#cite_note-Dokter_1975-3) **excess code** or **biased representation**, is a method for [signed number representation](https://en.wikipedia.org/wiki/Signed_number_representation "Signed number representation") where a signed number n is represented by the bit pattern corresponding to the unsigned number n+K, K being the _biasing value_ or _offset_.
 
 $Bias=2^{n-1}$ 标准移码，用来表示浮点数的阶码
 标准移码和2's补码的关系

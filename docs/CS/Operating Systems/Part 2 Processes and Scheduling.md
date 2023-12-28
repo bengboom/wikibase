@@ -61,7 +61,7 @@ IO管理子系统
 	- Memory Management
 	- Resource Ownership and Utilization
 	- .......
-进程=程序+数据+PCB（数据结构）
+进程=**程序+数据+PCB**（数据结构）
 ### States
 进程有多种状态
 #### two-state process model
@@ -126,14 +126,14 @@ tables ![[Screenshot 2023-09-07 at 10.47.49.png]]
 - Memory Tables
 	- Allocation of main memory to processes 分配情况
 	- Allocation of second memory to processes
-	- protection attributes for access to shared memory regions 保护
+	- Protection attributes for access to shared memory regions 保护
 - I/O Tables
 	- I/O device is available or assigned 设备的使用情况
 	- I/O 操作状态
 	- I/O 传输的东西在内存中的起止地址
 - File Tables (File System)
 	- 已有的所有文件
-	- location in  secondary memory
+	- location in secondary memory
 	- current states
 	- attributes, privilege
 - Process Tables
@@ -254,7 +254,7 @@ Processor-bound进程充分利用时间片， 而I/O-bound进程在两次I/O之�
 改进： **VRR** *Virtual Round Robin* 比RR公平 用于分时系统
 增加辅助队列接受IO阻塞完成的过程，调度优先与就绪队列
 ##### Shortest Process Next SPN
-非剥夺，总是执行剩下队列中最短的进程
+非剥夺，总是执行**剩下队列中**最短的进程 先来了就执行了
 - 进程执行时间难确定
 - 对长进程不公平
 - 需要考虑紧迫程度
@@ -276,7 +276,20 @@ Choose next process with the highest response ratio
 2.各个队列中进程执行的时间片不同，优先权愈高时间片愈短
 3.新进程首先放入第一队列尾，按FCFS方法调度，若一个时间片 未完成，到下一队列排队等待； 
 4.仅当第一队列空时，调度程序才开始调度第二队列的进程，依次类推。
-
+##### 时间计算
+在进程调度的背景下，了解不同调度算法的性能是非常重要的。其中一个关键的性能指标是**平均带权周转时间**（Average Weighted Turnaround Time），它提供了一个衡量调度算法效率的有用视角。 
+平均带权周转时间 
+- **定义**：平均带权周转时间是指每个进程的周转时间与其服务时间的比值的平均值。它反映了进程从提交到完成所经历的时间相对于实际执行时间的比率。 
+- **计算方法**： 
+	1. **周转时间**：对每个进程而言，其周转时间是完成时间减去到达时间。 
+	2. **带权周转时间**：每个进程的周转时间除以其服务时间（即CPU占用时间）。
+	3. **平均带权周转时间**：所有进程的带权周转时间的总和除以进程数。 
+	- **公式**： 
+		- 周转时间：$T_i = 完成时间_i - 到达时间_i$ 
+		- 带权周转时间：$WT_i = \frac{T_i}{服务时间_i}$ 
+		- 平均带权周转时间：$\text{平均带权周转时间} = \frac{\sum_{i=1}^{n} WT_i}{n}$ 
+		- 其中，$n$ 是进程的总数。 
+	  - **重要性**：平均带权周转时间是一个衡量进程调度效率的关键指标，特别是在进程执行时间差异较大的情况下。它有助于评估调度算法对长作业和短作业的公平性和效率。
 ### Real-time scheduling
 experiments control, robotics...
 指能及时响应外部事件的请求，在规定的时间内完成对该事件的 处理，并控制所有实时任务协调一致地运行的计算机系统
@@ -287,7 +300,7 @@ experiments control, robotics...
 - periodic 周期性
 - aperiodic 非周期性
 #### Characteristics of Real-time System
-- Deterministic 确定性设置预设时间，运行时间确定
+- **Deterministic** **确定性**设置预设时间，**运行时间确定**
 - Responsiveness 响应性 收到中断后多长时间去服务
 - User control
 	- user specifies priority
@@ -353,7 +366,8 @@ experiments control, robotics...
 ### Mutual Exclusion and Synchronization
 
 互斥解决资源竞争问题
-**Critical sections 临界区**，一次只允许一个进程使用临界区中的资源 **临界资源**
+**Critical sections 临界区**，是访问临界资源的那段代码
+一次只允许一个进程使用临界区中的资源 **临界资源**
 
 #### 互斥的要求
 - Only one process at a time is allowed in the critical section for a resource
@@ -495,7 +509,7 @@ Consumable Resources
 - Mutual Exclusion
 - Hold-and-wait
 - No preemption
-导致：
+导致：（充分条件）
 - Circular wait
 #### Deadlock Prevention
 ##### 间接方法

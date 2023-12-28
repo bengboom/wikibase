@@ -16,18 +16,30 @@ and its really a magic machine, most of people don't know about the operation pr
 
 #### Alone or with others
 often alone, in the library
-#### 
-
-### Place
 ### Hometown
 I am from Chongqing. It's in the south-west part of China, Its a fasinating mega city which attracts millions of visitors every year.
-
-### Home / Area
+#### Home / Area
 No,
 I live in a four-man dormitory most of the time at school, so do most university students. It's quite small but it's hard for us students to improve the living condition.
+### Accommodation
 
-### People
-### Friends
-I enjoy 
-### Teachers
+### Living Area
 
+## 2023 9-12 New
+### Fishing
+### Geography
+### Cinema
+### Coffee or Tea
+### Musical Instrument
+### Robots
+### Noise
+### Running
+### Chatting
+### Helping Others
+### Map
+### Clothes
+### Gifts
+### Transport
+
+## Old
+### Ice cream
